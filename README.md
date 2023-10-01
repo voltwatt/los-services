@@ -1,4 +1,4 @@
-- Add self-signed wildcard domain certificates in traefik volumes. Use mkcert in you home folder
+- Add self-signed wildcard domain certificates in traefik volumes. Use mkcert in you home/certs folder
 - Add self-signed localhost certificates. Use mkcert in you home/certs folder
 
 ```bash

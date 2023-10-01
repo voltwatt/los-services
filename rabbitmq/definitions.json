@@ -1,0 +1,449 @@
+{
+ "rabbit_version": "3.8.2",
+ "users": [
+  {
+   "name": "admin",
+   "password": "admin",
+   "tags": "administrator"
+  },
+  {
+   "name": "logstash",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "catalogue",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "link",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "media",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "review",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "homepage",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "basket",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "search",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "ucb",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "blog",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "info-block",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "callcenter",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "asterisk",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  },
+  {
+   "name": "stock",
+   "password_hash": "OAwxmkgZL4yF0BjPJJvqj6bt6cwCiL7pyQiv/zx9aNpLayrv",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": ""
+  }
+ ],
+ "vhosts": [
+  {
+   "name": "\/"
+  },
+  {
+   "name": "\/logstash"
+  },
+  {
+   "name": "\/catalogue"
+  },
+  {
+   "name": "\/link"
+  },
+  {
+   "name": "\/media"
+  },
+  {
+   "name": "\/review"
+  },
+  {
+   "name": "\/homepage"
+  },
+  {
+   "name": "\/basket"
+  },
+  {
+   "name": "\/search"
+  },
+  {
+   "name": "\/ucb"
+  },
+  {
+   "name": "\/blog"
+  },
+  {
+   "name": "\/info-block"
+  },
+  {
+   "name": "\/callcenter"
+  },
+  {
+   "name": "\/asterisk"
+  },
+  {
+   "name": "\/stock"
+  }
+ ],
+ "permissions": [
+  {
+   "user": "admin",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/logstash",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/catalogue",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/link",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/media",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/review",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/homepage",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/basket",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/search",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/ucb",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/blog",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/info-block",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/callcenter",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/asterisk",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "admin",
+   "vhost": "\/stock",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "logstash",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "logstash",
+   "vhost": "\/logstash",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "catalogue",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "catalogue",
+   "vhost": "\/catalogue",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "link",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "link",
+   "vhost": "\/link",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "media",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "media",
+   "vhost": "\/media",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "review",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "review",
+   "vhost": "\/review",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "homepage",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "homepage",
+   "vhost": "\/homepage",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "basket",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "basket",
+   "vhost": "\/basket",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "search",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "search",
+   "vhost": "\/search",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "ucb",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "ucb",
+   "vhost": "\/ucb",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "blog",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "blog",
+   "vhost": "\/blog",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "info-block",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "info-block",
+   "vhost": "\/info-block",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "callcenter",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "callcenter",
+   "vhost": "\/callcenter",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "asterisk",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "asterisk",
+   "vhost": "\/asterisk",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "stock",
+   "vhost": "\/",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "stock",
+   "vhost": "\/stock",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  }
+ ],
+ "parameters": [],
+ "policies": [],
+ "queues": [],
+ "exchanges": [],
+ "bindings": []
+}

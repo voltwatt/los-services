@@ -1,0 +1,19 @@
+http:
+  routers:
+    traefik:
+      rule: "Host(`traefik.online-store.com`)"
+      service: "api@internal"
+      tls:
+        domains:
+          - main: "traefik.online-store.com"
+            sans:
+              - "*.online-store.com"
+  middlewares:
+    forwardedProto:
+      headers:
+        customRequestHeaders:
+          X-Forwarded-Proto: "https"
+tls:
+  certificates:
+    - certFile: "/etc/certs/_wildcard.online-store.com.pem"
+      keyFile: "/etc/certs/_wildcard.online-store.com-key.pem"

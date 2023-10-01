@@ -1,0 +1,73 @@
+version: '3.7'
+
+networks:
+  services:
+    name: services
+
+services:
+
+  traefik:
+    image: traefik:v2.8
+    container_name: traefik
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik/static.yml:/etc/traefik/traefik.yml:ro
+      - ./traefik/dynamic.yml:/etc/traefik/dynamic.yml:ro
+      - /home/volt/certs:/etc/certs:ro
+    networks:
+      - services
+    restart: unless-stopped
+
+  rabbitmq:
+    image: rabbitmq:3.8.2-management
+    container_name: rabbitmq
+    volumes:
+      - /opt/docker/online-store/rabbitmq:/var/lib/rabbitmq
+      - ./rabbitmq/rabbitmq.config:/etc/rabbitmq/rabbitmq.config
+      - ./rabbitmq/definitions.json:/etc/rabbitmq/definitions.json
+    networks:
+      - services
+    ports:
+      - "7012:5672"
+      - "7013:15672"
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.rabbitmq.rule=Host(`rabbitmq.online-store.com`)
+      - traefik.http.routers.rabbitmq.tls=true
+      - traefik.http.services.rabbitmq.loadbalancer.server.port=15672
+    restart: unless-stopped
+
+  elk:
+    image: sebp/elk:latest
+    container_name: elk
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - bootstrap.memory_lock=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - /opt/docker/online-store/elastic:/var/lib/elasticsearch
+      - ./logstash/input.conf:/etc/logstash/conf.d/03-input.conf
+      - ./logstash/output.conf:/etc/logstash/conf.d/30-output.conf
+    networks:
+      - services
+    depends_on:
+      - rabbitmq
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.elk.rule=Host(`kibana.online-store.com`)
+      - traefik.http.routers.elk.tls=true
+      - traefik.http.services.elk.loadbalancer.server.port=5601
+    restart: unless-stopped

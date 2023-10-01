@@ -5,7 +5,7 @@
     mkcert localhost
     mkcert "*.online-store.com" "online-store.com"
 ```
-- Add to etc/hosts:
+- Add to etc/hosts:  
 127.0.0.1 kibana.online-store.com  
 127.0.0.1 traefik.online-store.com  
 127.0.0.1 rabbitmq.online-store.com  

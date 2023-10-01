@@ -18,7 +18,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./traefik/static.yml:/etc/traefik/traefik.yml:ro
       - ./traefik/dynamic.yml:/etc/traefik/dynamic.yml:ro
-      - /home/volt/certs:/etc/certs:ro
+      - /home/EDITME/certs:/etc/certs:ro
     networks:
       - services
     restart: unless-stopped

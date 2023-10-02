@@ -24,5 +24,5 @@ docker run -it --rm \
   -Dsonar.projectKey=online-store \
   -Dsonar.projectName='online-store' \
   -Dsonar.host.url=https://sonarqube.online-store.com \
-  -Dsonar.token=sqp_ed4c4451743d8eb090e4421b034b363a367cb373
+  -Dsonar.token=EDITME
 ```
